@@ -18,7 +18,7 @@ MATCHER = re.compile(
 
 
 def get_prayer_times():
-    page = urlopen('http://islaminireland.com/timetable/dublin/').read()
+    page = urlopen('http://islaminireland.com/timetable/dublin/').read() # replace dublin with your city in Ireland
     start_tag = 'Prayer Timetable for Dublin'
     end_tag = '<!--//donate-->'
     raw_data = page[page.find(start_tag):page.find(end_tag)]
