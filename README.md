@@ -3,11 +3,11 @@ A command line utility to get prayer times for Dublin City (or any cities in Ire
 
 # Usage Example:
 ```
-$ ./prayertimes.py short
+$ ./prayertimes.py
 next prayer (fajr) due in 116 minutes
 
 
-$ ./prayertimes.py long
+$ ./prayertimes.py -c dublin -m long
 next prayer (fajr) due in 115 minutes
 fajr	:06:43
 shurooq	:08:37
