@@ -7,7 +7,7 @@ from datetime import datetime as dt
 from collections import OrderedDict
 
 
-MATCHER = re.compile(
+PTIME_MATCHER = re.compile(
     "(?P<fajr>\d\d:\d\d).*"
     "(?P<shurooq>\d\d:\d\d).*"
     "(?P<dhuhr>\d\d:\d\d).*"
@@ -22,7 +22,7 @@ def get_prayer_times():
     start_tag = 'Prayer Timetable for Dublin'
     end_tag = '<!--//donate-->'
     raw_data = page[page.find(start_tag):page.find(end_tag)]
-    prayer_times = re.search(MATCHER, raw_data).groups()
+    prayer_times = re.search(PTIME_MATCHER, raw_data).groups()
 
     prayers = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
     time_table = OrderedDict(zip(prayers, prayer_times))
