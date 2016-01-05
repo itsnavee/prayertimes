@@ -39,7 +39,7 @@ PTIME_MATCHER = re.compile(
 )
 ICC_URL = 'http://islaminireland.com/timetable/{city}'
 PRAYERS = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
-COUNTDOWN_BANNER = 'next prayer ({prayer}) due in {time} minutes'
+COUNTDOWN_BANNER = 'current prayer ({prayer}) due in {time} minutes'
 
 
 def get_options():
