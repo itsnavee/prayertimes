@@ -1,5 +1,6 @@
 # Introduction:
-A command line utility to get prayer times for Dublin City (or any cities in Ireland)
+A command line utility to get prayer times for Ireland (any cities in Ireland)
+Note: Prayer timings are as per the Islamic Center on South Circular Road, Dublin 8 (www.islaminireland.com)
 
 # Usage Example:
 ```
